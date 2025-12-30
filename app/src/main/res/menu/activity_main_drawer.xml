@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home" />
+           <item
+            android:id="@+id/nav_about"
+            android:title="About" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_request"
+            android:title="Supplies Requests" />
+
+        <item
+            android:id="@+id/nav_orders"
+            android:title="@string/orders" />
+        <item
+            android:id="@+id/nav_learning"
+            android:title="E-Learning" />
+        <item
+            android:id="@+id/nav_assignments"
+            android:title="Assignments" />
+           <item
+               android:id="@+id/nav_final_exam"
+               android:title="Final Exam" />
+        <item
+            android:id="@+id/nav_my_grades"
+            android:title="My Grades" />
+        <item
+            android:id="@+id/nav_my_attendance"
+            android:title="Class Attendance" />
+        <item
+            android:id="@+id/nav_get_certificate"
+            android:title="My Certificate" />
+        <item
+            android:id="@+id/nav_booking_history"
+            android:title="Booking History" />
+        <item
+            android:id="@+id/nav_bookings"
+            android:title="Service Requests" />
+        <item
+            android:id="@+id/nav_invoice"
+            android:title="Invoice" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:title="@string/feedback" />
+        <item
+            android:id="@+id/nav_register"
+            android:title="@string/register" />
+        <item
+            android:id="@+id/nav_login"
+            android:title="@string/login" />
+        <item
+            android:id="@+id/nav_completion"
+            android:title="Completed Services" />
+        <item
+            android:id="@+id/nav_help"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_contact"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_staff_login"
+            android:title="Staff Login" />
+        <item
+            android:id="@+id/nav_supplier_login"
+            android:title="Supplier Login" />
+
+        <item
+            android:id="@+id/nav_reg_supplier"
+            android:title="Register supplier" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="@string/logout" />
+    </group>
+</menu>

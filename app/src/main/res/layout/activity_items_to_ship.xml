@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    tools:context="com.example.Varsani.Staff.ShippingMrg.ItemsToShip">
+
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_marginBottom="110dp">
+
+            <!-- Order Details Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/txv_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Details"
+                        android:textAlignment="center"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="#222222"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingBottom="8dp" />
+
+                    <!-- Order Info -->
+                    <TextView
+                        android:id="@+id/txv_orderID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order ID: 123456"
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:fontFamily="sans-serif" />
+
+                    <TextView
+                        android:id="@+id/txv_shippingCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shipping Cost: 450"
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:fontFamily="sans-serif" />
+
+                    <TextView
+                        android:id="@+id/txv_oderCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order Cost: 5400"
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:fontFamily="sans-serif" />
+
+                    <TextView
+                        android:id="@+id/txv_totalAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount: 123456"
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:fontFamily="sans-serif" />
+
+                    <TextView
+                        android:id="@+id/txv_orderDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order Date: 2024-04-20"
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:fontFamily="sans-serif" />
+
+                    <TextView
+                        android:id="@+id/txv_orderStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order Status: Pending"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingBottom="8dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#CCCCCC"
+                        android:layout_marginVertical="8dp" />
+
+                    <!-- Customer Info -->
+                    <TextView
+                        android:id="@+id/txv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name: John Doe"
+                        android:textSize="15sp"
+                        android:textColor="#444444"
+                        android:fontFamily="sans-serif" />
+
+                    <TextView
+                        android:id="@+id/txv_county"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="County: Nairobi"
+                        android:textSize="15sp"
+                        android:textColor="#444444"
+                        android:fontFamily="sans-serif" />
+
+                    <TextView
+                        android:id="@+id/txv_town"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Town: Westlands"
+                        android:textSize="15sp"
+                        android:textColor="#444444"
+                        android:fontFamily="sans-serif" />
+
+                    <TextView
+                        android:id="@+id/txv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address: 123 Market Street"
+                        android:textSize="15sp"
+                        android:textColor="#444444"
+                        android:fontFamily="sans-serif"
+                        android:paddingBottom="4dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- RecyclerView for items to ship -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:scrollbars="vertical" />
+
+            <!-- Loading Indicator -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Layout for Assigning Driver -->
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:elevation="10dp"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/edt_driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select driver"
+            android:textColorHint="#555555"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:background="@drawable/edittext_background1"
+            android:fontFamily="sans-serif"
+            android:drawableStart="@drawable/ic_dropdown"/>
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_driver"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Assign"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

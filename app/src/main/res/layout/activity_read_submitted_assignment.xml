@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Staff.Trainer.ReadSubmittedAssignment">
+
+
+    <!-- Card for Trainee Information -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_report"
+        android:elevation="2dp"
+        android:layout_margin="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/txv_trainee_name"
+                android:text="Name"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txv_traineeId"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/txv_trainee_name"
+                android:text="ID"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- PDF Image Icon -->
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/img_pdf"
+        android:layout_below="@id/card_report"
+        android:src="@drawable/ic_pdf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Styled Button to Enter Assignment Marks -->
+    <Button
+        android:id="@+id/btn_enter_marks"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img_pdf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Enter Marks"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:backgroundTint="@color/colorreceipt"
+        android:drawableLeft="@drawable/ic_edit"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:elevation="4dp"
+        app:cornerRadius="25dp"/>
+
+</RelativeLayout>

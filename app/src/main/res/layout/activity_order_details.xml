@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.Varsani.Staff.Finance.OrderDetails">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_above="@+id/layout_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingBottom="90dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="12dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Section Header -->
+                    <TextView
+                        android:id="@+id/txv_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Order Details"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:paddingBottom="8dp"/>
+
+                    <!-- Order Info -->
+                    <TextView android:id="@+id/txv_orderID" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Order ID" style="@style/StyledInfoText"/>
+                    <TextView android:id="@+id/txv_mpesaCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mpesa Code" style="@style/StyledInfoText"/>
+                    <TextView android:id="@+id/txv_shippingCost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Shipping Cost" style="@style/StyledInfoText"/>
+                    <TextView android:id="@+id/txv_itemCost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Item Cost" style="@style/StyledInfoText"/>
+                    <TextView android:id="@+id/txv_orderCost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Order Cost" style="@style/StyledInfoText"/>
+                    <TextView android:id="@+id/txv_orderDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Order Date" style="@style/StyledInfoText"/>
+                    <TextView android:id="@+id/txv_orderStatus" android:layout_width="wrap_content" android:textColor="@color/colorAccent" android:layout_height="wrap_content" android:text="Order Status" style="@style/StyledInfoText"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginVertical="10dp"
+                        android:background="@android:color/darker_gray"/>
+
+                    <!-- Client Info -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Client Details"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:paddingBottom="8dp"/>
+
+                    <TextView android:id="@+id/txv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name" style="@style/StyledInfoText"/>
+                    <TextView android:id="@+id/txv_county" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="County" style="@style/StyledInfoText"/>
+                    <TextView android:id="@+id/txv_town" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Town" style="@style/StyledInfoText"/>
+                    <TextView android:id="@+id/txv_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Address" style="@style/StyledInfoText"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:scrollbars="vertical" />
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Button -->
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:elevation="10dp"
+        android:padding="12dp">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Approve Payment"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</RelativeLayout>

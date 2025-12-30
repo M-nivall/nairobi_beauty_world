@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Clients.SignAttendance">
+    <!-- Instruction TextView -->
+    <TextView
+        android:id="@+id/instruction_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click the button below to mark your attendance."
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center" />
+
+    <!-- Mark Attended Button -->
+    <Button
+        android:id="@+id/btn_sign_attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark Attended"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:background="@color/green"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:focusable="true"
+        android:clickable="true" />
+
+</LinearLayout>

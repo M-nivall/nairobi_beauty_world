@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Clients.MyGrades">
+
+    <LinearLayout
+        android:id="@+id/layout_grades"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Heading Section -->
+        <TextView
+            android:id="@+id/tvMyGradesHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Grades"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="@color/colorreceipt"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- CardView for Grades Details -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp"
+            android:background="@android:color/white"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Trainee Details -->
+                <TextView
+                    android:id="@+id/tvTraineeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trainee Name: John Doe"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvTraineeID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trainee ID: 12345"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+                    android:paddingBottom="12dp"/>
+
+                <!-- Divider Line -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Marks Section -->
+                <TextView
+                    android:id="@+id/tvAssignmentMarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Assignment Marks: 40/50"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvExamMarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Exam Marks: 45/50"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvTheoryMarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Theory Marks: 30/50"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+                    android:paddingBottom="8dp"/>
+
+                <!-- Divider Line -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CCCCCC"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Total Score -->
+                <TextView
+                    android:id="@+id/tvTotalScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Score: 115/150"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

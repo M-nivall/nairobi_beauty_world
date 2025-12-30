@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@android:color/white"
+    tools:context=".Staff.Store_mrg.ApproveSupply">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        tools:ignore="MissingConstraints">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Approve Supply"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Divider Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorBlack"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Card for Tender Details -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="10dp"
+            android:padding="24dp"
+            android:backgroundTint="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/txv_tenderID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tender ID: 12345"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:paddingVertical="6dp"/>
+
+                <TextView
+                    android:id="@+id/txv_tenderdesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tender: Supply Wood"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:paddingVertical="6dp"/>
+
+                <TextView
+                    android:id="@+id/txv_quotation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quotation: Kes 50,000"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:paddingVertical="6dp"/>
+
+                <TextView
+                    android:id="@+id/txv_expDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Expected Supply Date: 12th Oct 2024"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:paddingVertical="6dp"/>
+
+                <TextView
+                    android:id="@+id/txv_prop_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Proposed Amount: Kes 45,000"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:paddingVertical="6dp"/>
+
+                <TextView
+                    android:id="@+id/txv_tenderstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status: Pending"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:paddingVertical="6dp"/>
+
+                <!-- Divider Line -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginVertical="16dp"/>
+
+                <!-- Confirm Supply Button -->
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm Supply"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/btn_color"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="12dp"
+                    android:paddingVertical="14dp"
+                    android:layout_marginHorizontal="12dp"/>
+
+                <!-- Progress Bar -->
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginHorizontal="12dp"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

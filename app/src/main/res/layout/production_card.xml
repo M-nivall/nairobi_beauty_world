@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardProduction"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/txtProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView android:id="@+id/txtBatchNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batch No"/>
+
+        <TextView android:id="@+id/txtProductionDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Production Date"/>
+
+        <TextView android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textColor="@android:color/holo_red_dark"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

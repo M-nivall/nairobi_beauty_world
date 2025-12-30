@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Nairobi Beauty</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Nairobi Beauty</string>
+    <string name="nav_header_subtitle">Nairobi Beauty</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="home_second">Home Second</string>
+    <string name="logout">Logout</string>
+    <string name="register">Register</string>
+    <string name="login">Customer Login</string>
+    <string name="orders">Orders</string>
+    <string name="feedback">Feedback</string>
+    <string name="staff_login">Login</string>
+    <string name="about">
+        We are Manufacturer of LORYS Hair Treatment, Shampoo, Conditioners, Hair Food, Avocado Oil, Glycerin,
+        Olive Sheen Sprays, Liquid Essential Hair Oils. Lorys Leave-in, Hair Mayonnaise and Pure Coconut Oil.
+        We are world Class Quality Cosmetic Manufacturing Company registered in the Republic of Kenya.
+
+
+    </string>
+
+
+    <string name="help">
+        <b>1.	Help</b>
+
+    </string>
+
+    <string-array name="recipient">
+        <item>Select Recipient</item>
+        <item>Finance</item>
+        <item>Shipping Manager</item>
+        <item>Stock Manager</item>
+        <item>Service Manager</item>
+    </string-array>
+
+
+    <string-array name="products">
+        <item>Select item</item>
+
+        <item>Smoke Hood</item>
+        <item>6 Pot Bain Marie</item>
+        <item>Steel Burner with Double Frier</item>
+        <item>Steel Sink</item>
+        <item>Chacoal-grill-fiber-insulated</item>
+        <item>charcoal oven full stainless barbecue grill</item>
+        <item>Chips warmer with inserts</item>
+        <item>Tea urn commercial  300ltr</item>
+        <item>wood charcoal cooker</item>
+    </string-array>
+    <string name="title_activity_supplier_payments">SupplierPayments</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

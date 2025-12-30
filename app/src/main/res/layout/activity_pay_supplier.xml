@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Staff.Finance.PaySupplier">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Pay For Stock Supply"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- CardView for Payment Info -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="5dp"
+            app:cardElevation="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <!-- Supplier Details -->
+                <TextView
+                    android:id="@+id/txv_supplyid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No."
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/txv_supplierName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Supplier Name"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/txv_paymentdescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tender"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/txv_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Amount"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/txv_paymentdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="InvoiceDate"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/txv_paymentstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorBlack" />
+
+                <!-- Large Amount Display -->
+                <TextView
+                    android:id="@+id/txv_amount2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Amount(Kes)"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="10dp" />
+
+                <!-- Section Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Options"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Radio Buttons -->
+                <RadioGroup
+                    android:id="@+id/rg_payment_methods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rb_mpesa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M-Pesa"
+                        android:textColor="@color/colorBlack" />
+
+                    <RadioButton
+                        android:id="@+id/rb_bank_transfer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bank"
+                        android:textColor="@color/colorBlack" />
+                </RadioGroup>
+
+                <!-- Payment Code Input -->
+                <EditText
+                    android:id="@+id/edt_paymentCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Enter Payment Code"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/edittext_background1"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#555555"
+                    android:inputType="text" />
+
+                <!-- Pay Button -->
+                <Button
+                    android:id="@+id/paysupplier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pay Supplier"
+                    android:backgroundTint="@color/btn_color"
+                    android:layout_marginTop="20dp" />
+
+                <!-- Progress Bar -->
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

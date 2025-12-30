@@ -1,0 +1,61 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <CheckBox
+            android:id="@+id/checkBoxSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Question"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textViewQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sample Question"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingEnd="10dp"
+            android:layout_below="@id/checkBoxSelect"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/textViewMultiple1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:textSize="14sp"
+            android:layout_below="@id/textViewQuestion"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/textViewMultiple2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:textSize="14sp"
+            android:layout_below="@id/textViewMultiple1"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/textViewCorrectAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correct Answer"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@id/textViewMultiple2" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

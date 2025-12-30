@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Staff.Finance.PaymentDetails"
+    android:background="#FAFAFA">
+
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Card for Payment Details -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="4dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/txv_course_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Course Details"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:paddingBottom="10dp" />
+
+                    <TextView
+                        android:id="@+id/txv_course"
+                        style="@style/StyledLabel"
+                        android:text="Course: Beauty" />
+
+                    <TextView
+                        android:id="@+id/txv_study_mode"
+                        style="@style/StyledLabel"
+                        android:text="Study Mode: Weekend" />
+
+                    <TextView
+                        android:id="@+id/txv_duration"
+                        style="@style/StyledLabel"
+                        android:text="Duration: 3 weeks" />
+
+                    <TextView
+                        android:id="@+id/txv_starting_date"
+                        style="@style/StyledLabel"
+                        android:text="Starting Date: 2025-04-28" />
+
+                    <TextView
+                        android:id="@+id/txv_fee"
+                        style="@style/StyledLabel"
+                        android:text="Fee: KES 8,000" />
+
+                    <!-- Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!-- Section Header -->
+                    <TextView
+                        android:id="@+id/txv_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Payment Details"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:paddingBottom="10dp" />
+
+                    <!-- Payment Info -->
+                    <TextView
+                        android:id="@+id/txv_bookingID"
+                        style="@style/StyledLabel"
+                        android:text="Booking ID: 12345" />
+
+                    <TextView
+                        android:id="@+id/txv_paymentMode"
+                        style="@style/StyledLabel"
+                        android:text="Payment Mode: M-PESA" />
+
+                    <TextView
+                        android:id="@+id/txv_amount"
+                        style="@style/StyledLabel"
+                        android:text="Amount: KES 8,000" />
+
+                    <TextView
+                        android:id="@+id/txv_paymentCode"
+                        style="@style/StyledLabel"
+                        android:text="Payment Code: MP123ABC" />
+
+                    <TextView
+                        android:id="@+id/txv_date"
+                        style="@style/StyledLabel"
+                        android:text="Date: 2025-04-22" />
+
+                    <TextView
+                        android:id="@+id/txv_status"
+                        style="@style/StyledLabel"
+                        android:text="Status: Pending"
+                        android:textColor="@android:color/holo_red_dark" />
+
+
+                    <!-- Divider -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <!-- Client Section -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Client Details"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="6dp" />
+
+                    <TextView
+                        android:id="@+id/txv_name"
+                        style="@style/StyledLabel"
+                        android:text="Name: John Doe" />
+
+                    <TextView
+                        android:id="@+id/txv_phone"
+                        style="@style/StyledLabel"
+                        android:text="Phone No: 0712345678" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Optional: ProgressBar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                style="?android:attr/progressBarStyleLarge" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Button Layout -->
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:elevation="6dp">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Approve Payment"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginHorizontal="8dp"
+            android:layout_gravity="center" />
+    </RelativeLayout>
+
+</RelativeLayout>
