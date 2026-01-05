@@ -91,4 +91,5 @@ public class AdapterGrades extends RecyclerView.Adapter<AdapterGrades.GradeViewH
             editTextTheoryMarks = itemView.findViewById(R.id.editTextTheoryMarks);
         }
     }
+
 }
