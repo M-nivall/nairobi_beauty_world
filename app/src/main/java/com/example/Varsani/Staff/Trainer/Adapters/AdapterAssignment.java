@@ -65,6 +65,7 @@ public class AdapterAssignment extends RecyclerView.Adapter<RecyclerView.ViewHol
             });
         }
     }
+
     @Override
     public int getItemCount() {
         return items.size();
