@@ -124,4 +124,5 @@ public class CompletedHistory extends AppCompatActivity {
         finish();
         startActivity(getIntent());
     }
+
 }
