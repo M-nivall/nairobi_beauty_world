@@ -83,7 +83,6 @@ public class StaffLogin extends AppCompatActivity {
 //                startActivity(intent);
 //            }
 //        });
-
     }
 
     @Override
