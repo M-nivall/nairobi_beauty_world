@@ -79,5 +79,4 @@ public class AdapterCompletedHistory extends RecyclerView.Adapter<AdapterComplet
             tvStatus = itemView.findViewById(R.id.tvStatus);
         }
     }
-
 }
