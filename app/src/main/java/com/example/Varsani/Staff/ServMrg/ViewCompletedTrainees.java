@@ -71,4 +71,5 @@ public class ViewCompletedTrainees extends AppCompatActivity {
         finish();
         startActivity(getIntent());
     }
+
 }
