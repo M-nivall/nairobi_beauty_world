@@ -158,7 +158,6 @@ public class Dashboard extends AppCompatActivity {
             drawer.closeDrawer(GravityCompat.START, true);
             return false;
         });
-
         drawer.closeDrawers();
         check();
     }
