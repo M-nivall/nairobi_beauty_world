@@ -21,7 +21,6 @@ public class MyRequetsModel {
         return requestID;
     }
 
-
     public String getItems() {
         return items;
     }
