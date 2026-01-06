@@ -47,6 +47,4 @@ public class FragmentProfile extends Fragment {
         txv_role.setText(user.getUser_type());
         return  root;
     }
-
-
 }
