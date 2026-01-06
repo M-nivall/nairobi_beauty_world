@@ -73,5 +73,4 @@ public class AdapterQuizList extends RecyclerView.Adapter<AdapterQuizList.Origin
             checkBoxSelect = v.findViewById(R.id.checkBoxSelect);
         }
     }
-
 }
