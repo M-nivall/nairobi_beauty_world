@@ -96,5 +96,4 @@ public class AdapterUnits extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     public int getItemCount() {
         return items.size();
     }
-
 }
