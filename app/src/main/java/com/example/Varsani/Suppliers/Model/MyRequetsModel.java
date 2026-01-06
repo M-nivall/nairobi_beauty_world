@@ -8,7 +8,6 @@ public class MyRequetsModel {
     private String requestStatus;
     private String quantity;
 
-
     public MyRequetsModel(String requestID, String items,
                           String requestDate, String requestStatus, String quantity) {
         this.requestID = requestID;
