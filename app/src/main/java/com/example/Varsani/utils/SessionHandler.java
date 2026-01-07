@@ -145,6 +145,7 @@ public class SessionHandler {
 //        return user;
 //    }
 
+
     /**
      * Logs out user by clearing the session
      */
