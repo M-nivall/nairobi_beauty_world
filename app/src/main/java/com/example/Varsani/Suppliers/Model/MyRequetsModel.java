@@ -37,5 +37,4 @@ public class MyRequetsModel {
     public String getRequestStatus() {
         return requestStatus;
     }
-
 }
