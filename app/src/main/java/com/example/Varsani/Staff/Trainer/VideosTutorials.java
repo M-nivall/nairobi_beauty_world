@@ -56,7 +56,6 @@ public class VideosTutorials extends AppCompatActivity {
         Intent in=getIntent();
         subjectId=in.getStringExtra("subjectId");
 
-
         txv_status.setVisibility(View.GONE);
 
 
