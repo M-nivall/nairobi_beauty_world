@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
     AdapterProducts adapterProducts;
     HomeFragment homeFragment;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
