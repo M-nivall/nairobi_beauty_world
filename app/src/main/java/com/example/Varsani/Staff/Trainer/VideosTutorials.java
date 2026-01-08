@@ -58,7 +58,6 @@ public class VideosTutorials extends AppCompatActivity {
 
         txv_status.setVisibility(View.GONE);
 
-
         session = new SessionHandler(this);
         user = session.getUserDetails();
 
