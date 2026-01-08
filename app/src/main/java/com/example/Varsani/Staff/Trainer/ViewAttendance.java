@@ -143,4 +143,5 @@ public class ViewAttendance extends AppCompatActivity {
         finish();
         startActivity(getIntent());
     }
+
 }
