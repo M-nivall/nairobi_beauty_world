@@ -42,6 +42,7 @@ public class BookingHistory extends AppCompatActivity {
     private SessionHandler session;
     private UserModel user;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
