@@ -20,7 +20,6 @@ public class SelectLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_login);
 
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         btn_driver=findViewById(R.id.card_driver);
         btn_finance=findViewById(R.id.card_finance);
