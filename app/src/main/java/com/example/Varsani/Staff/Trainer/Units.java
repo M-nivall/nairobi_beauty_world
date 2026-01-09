@@ -53,7 +53,6 @@ public class Units extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         txv_status = findViewById(R.id.txv_status);
 
-
         txv_status.setVisibility(View.GONE);
 
         session = new SessionHandler(this);
