@@ -54,7 +54,6 @@ public class AdapterCart extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private OnItemClickListener mOnItemClickListener;
     private OnMoreButtonClickListener onMoreButtonClickListener;
 
-    //
 
     private SessionHandler session;
     private UserModel user;
