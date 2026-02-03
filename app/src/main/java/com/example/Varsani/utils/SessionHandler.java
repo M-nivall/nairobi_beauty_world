@@ -77,7 +77,6 @@ public class SessionHandler {
         mEditor.putLong(KEY_EXPIRES, millis);
         mEditor.commit();
     }
-
     /**
      * Checks whether user is logged in
      *
