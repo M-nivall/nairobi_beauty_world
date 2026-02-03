@@ -14,7 +14,6 @@ public class Urls {
 
     public static  final String UEL_STAFF_SEND_FEEDBACK=ROOT_URL+"client/staff_sendfeedback.php";
     public static  final String UEL_STAFF_FEEDBACK=ROOT_URL+"client/getstafffeedback.php";
-
      //  products
     public static final String URL_GET_PRODUCTS=ROOT_URL + "client/products.php";
     public static final String URL_ADD_CART=ROOT_URL + "client/add_to_cart.php";
