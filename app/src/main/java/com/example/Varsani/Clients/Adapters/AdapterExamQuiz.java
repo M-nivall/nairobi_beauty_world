@@ -74,4 +74,5 @@ public class AdapterExamQuiz extends RecyclerView.Adapter<AdapterExamQuiz.ExamQu
             option2 = itemView.findViewById(R.id.option2);
         }
     }
+
 }
