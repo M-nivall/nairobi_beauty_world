@@ -384,8 +384,4 @@ public class AdapterCart extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public interface OnMoreButtonClickListener {
         void onItemClick(View view, ProductModal obj, MenuItem item);
     }
-
-
-
-
 }
