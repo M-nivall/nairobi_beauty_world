@@ -44,7 +44,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
 public class AdapterCart extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private List<CartModal> items;
