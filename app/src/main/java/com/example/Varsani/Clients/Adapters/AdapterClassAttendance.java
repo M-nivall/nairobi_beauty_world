@@ -64,5 +64,4 @@ public class AdapterClassAttendance extends RecyclerView.Adapter<AdapterClassAtt
             txtSessionDate = itemView.findViewById(R.id.txtSessionDate);
         }
     }
-
 }
