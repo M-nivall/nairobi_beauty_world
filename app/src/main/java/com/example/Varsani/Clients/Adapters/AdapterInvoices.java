@@ -32,7 +32,6 @@ public class AdapterInvoices extends RecyclerView.Adapter<RecyclerView.ViewHolde
     private String orderID = "";
 
     public static final String TAG = "Orders adapter";
-
 //    public void setOnItemClickListener(final OnItemClickListener mItemClickListener) {
 //        this.mOnItemClickListener = mItemClickListener;
 //    }
