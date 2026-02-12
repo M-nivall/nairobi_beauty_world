@@ -37,7 +37,6 @@ public class AdapterInvoices extends RecyclerView.Adapter<RecyclerView.ViewHolde
         this.items = items;
         ctx = context;
     }
-
     public class OriginalViewHolder extends RecyclerView.ViewHolder {
 
         public TextView txv_orderID, txv_orderCost,txv_orderDate;
