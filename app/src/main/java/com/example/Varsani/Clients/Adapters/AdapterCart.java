@@ -376,7 +376,6 @@ public class AdapterCart extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         return items.size();
 
     }
-
     public interface OnItemClickListener {
         void onItemClick(View view, ProductModal obj, int pos);
     }
