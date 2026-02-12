@@ -370,7 +370,6 @@ public class AdapterCart extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         progressDialog.show();
     }
 
-
     @Override
     public int getItemCount() {
         return items.size();
