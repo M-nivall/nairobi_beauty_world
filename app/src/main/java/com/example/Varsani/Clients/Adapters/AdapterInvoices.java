@@ -42,7 +42,6 @@ public class AdapterInvoices extends RecyclerView.Adapter<RecyclerView.ViewHolde
         public TextView txv_orderID, txv_orderCost,txv_orderDate;
         public TextView txv_mpesaCode,txv_orderStatus;
 
-
         public OriginalViewHolder(View v) {
             super(v);
 
