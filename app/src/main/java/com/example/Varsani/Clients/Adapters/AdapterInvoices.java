@@ -111,5 +111,4 @@ public class AdapterInvoices extends RecyclerView.Adapter<RecyclerView.ViewHolde
 //        void onItemClick(View view, ProductModal obj, MenuItem item);
 //    }
 
-
 }
