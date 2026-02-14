@@ -89,5 +89,4 @@ public class AdapterBookingHistory extends RecyclerView.Adapter<AdapterBookingHi
             bookingDate = itemView.findViewById(R.id.bookingDate);
         }
     }
-
 }
