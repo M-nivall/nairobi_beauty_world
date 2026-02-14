@@ -110,5 +110,4 @@ public class AdapterInvoices extends RecyclerView.Adapter<RecyclerView.ViewHolde
 //    public interface OnMoreButtonClickListener {
 //        void onItemClick(View view, ProductModal obj, MenuItem item);
 //    }
-
 }
