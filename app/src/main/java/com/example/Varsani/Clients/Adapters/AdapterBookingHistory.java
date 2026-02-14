@@ -71,7 +71,6 @@ public class AdapterBookingHistory extends RecyclerView.Adapter<AdapterBookingHi
             }
         });
     }
-
     @Override
     public int getItemCount() {
         return bookingList.size(); // Return the total number of items in the list
