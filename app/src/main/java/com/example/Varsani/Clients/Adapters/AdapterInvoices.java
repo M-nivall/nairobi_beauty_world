@@ -101,11 +101,4 @@ public class AdapterInvoices extends RecyclerView.Adapter<RecyclerView.ViewHolde
     public int getItemCount() {
         return items.size();
     }
-//    public interface OnItemClickListener {
-//        void onItemClick(View view, ProductModal obj, int pos);
-//    }
-//
-//    public interface OnMoreButtonClickListener {
-//        void onItemClick(View view, ProductModal obj, MenuItem item);
-//    }
 }
