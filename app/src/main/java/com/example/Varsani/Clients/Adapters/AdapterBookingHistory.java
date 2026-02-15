@@ -75,6 +75,7 @@ public class AdapterBookingHistory extends RecyclerView.Adapter<AdapterBookingHi
     public int getItemCount() {
         return bookingList.size(); // Return the total number of items in the list
     }
+
     // ViewHolder class to hold references to each item view
     public static class BookingViewHolder extends RecyclerView.ViewHolder {
         TextView bookingID, course, bookingDate;
