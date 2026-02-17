@@ -72,6 +72,7 @@ public class AdapterExamQuiz extends RecyclerView.Adapter<AdapterExamQuiz.ExamQu
             radioGroup = itemView.findViewById(R.id.radio_group);
             option1 = itemView.findViewById(R.id.option1);
             option2 = itemView.findViewById(R.id.option2);
+            
         }
     }
 }
