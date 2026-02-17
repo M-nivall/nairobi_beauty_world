@@ -101,4 +101,5 @@ public class AdapterInvoices extends RecyclerView.Adapter<RecyclerView.ViewHolde
     public int getItemCount() {
         return items.size();
     }
+
 }
