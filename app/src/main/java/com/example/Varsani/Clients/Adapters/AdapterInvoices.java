@@ -96,6 +96,7 @@ public class AdapterInvoices extends RecyclerView.Adapter<RecyclerView.ViewHolde
             });
         }
     }
+
     @Override
     public int getItemCount() {
         return items.size();
