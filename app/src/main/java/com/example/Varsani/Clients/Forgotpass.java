@@ -48,7 +48,6 @@ public class Forgotpass extends AppCompatActivity {
             }
         });
     }
-
     public void reset(){
         resetBtn.setVisibility(View.GONE);
         progressBar.setVisibility(View.VISIBLE);
