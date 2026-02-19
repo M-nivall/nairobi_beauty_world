@@ -150,5 +150,4 @@ public class SessionHandler {
         mEditor.commit();
 
     }
-
 }
