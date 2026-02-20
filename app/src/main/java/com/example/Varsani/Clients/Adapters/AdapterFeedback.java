@@ -78,5 +78,4 @@ public class AdapterFeedback extends RecyclerView.Adapter<RecyclerView.ViewHolde
     public int getItemCount() {
         return items.size();
     }
-
 }
